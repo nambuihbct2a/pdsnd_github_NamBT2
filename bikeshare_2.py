@@ -25,8 +25,13 @@ def get_filters():
 
     print('-'*80)
     return city, month, day
+<<<<<<< HEAD
 
 #Function to figure out the filtering requirements of the user
+=======
+"""Load data 
+    """
+>>>>>>> documentation
 def load_data(city, month, day):
     df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -76,7 +81,8 @@ def trip_duration_stats(df):
     print(f"Average Duration: {mins} minutes, {sec} seconds")
     print(f"\nThis took {(time.time() - start_time)} seconds.")
     print('-'*80)
-
+"""user_stats 
+    """
 def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -94,7 +100,8 @@ def user_stats(df):
         print("\nNo Birth Year data available.")
     print(f"\nThis took {(time.time() - start_time)} seconds.")
     print('-'*80)
-
+"""Display data 
+    """
 def display_data(df):
     start_loc = 0
     while True:
