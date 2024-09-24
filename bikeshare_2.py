@@ -95,6 +95,7 @@ def user_stats(df):
     print(f"\nThis took {(time.time() - start_time)} seconds.")
     print('-'*80)
 
+# Funcion display date
 def display_data(df):
     start_loc = 0
     while True:
