@@ -42,6 +42,7 @@ def load_data(city, month, day):
     
     return df
 
+#Function to calculate all the time-related statistics for the chosen data
 def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -52,6 +53,7 @@ def time_stats(df):
     print(f"\nThis took {(time.time() - start_time)} seconds.")
     print('-'*80)
 
+#Function to calculate station related statistics
 def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
