@@ -4,4 +4,4 @@
   - Most popular stations and trip routes.
   - Trip duration statistics.
   - User demographics (user types, gender, birth year).
-  - Display 
+  - Display data 
