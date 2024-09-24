@@ -8,6 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTH_DATA = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 DAY_LIST = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 
+#Creating a dictionary containing the data sources for the three cities
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     city = ''
@@ -25,6 +26,7 @@ def get_filters():
     print('-'*80)
     return city, month, day
 
+#Function to figure out the filtering requirements of the user
 def load_data(city, month, day):
     df = pd.read_csv(CITY_DATA[city])
     df['Start Time'] = pd.to_datetime(df['Start Time'])
