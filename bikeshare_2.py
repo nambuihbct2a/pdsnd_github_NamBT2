@@ -8,6 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTH_DATA = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
 DAY_LIST = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
 
+#Funcion get filters for user
 def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     city = ''
